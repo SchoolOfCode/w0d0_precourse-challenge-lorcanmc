@@ -1,57 +1,108 @@
 <head>
   <title>Alpha Go Tribute Page</title>
-  <link href="style.css" type="text/css" rel='stylesheet'>
+  <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
-  <header id="header">
-    <div id="logo">
-      <div class="img-container">
-        <a href="#">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DeepMind_logo.png/220px-DeepMind_logo.png">
-        </a>
-      </div>
-    </div>
-    <nav>
-      <div class="nav-button"><a href="#">Top</a></div>
-      <div class="nav-button"><a href="#article">Article</a></div>
-      <div class="nav-button"><a href="#footer">More Info</a></div>
-      </div>
-  </header>
-  <div id="main">
-    <div id="heading">
-      <h1 id="title">Alpha Go</h1>
-      <h2>The AI Go player developed by DeepMind Technologies</h2>
-    </div>
-    <figure id="img-div">
-      <img id="image" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e4a3210a854780006b18efa%2FArtificial-Human-Beings--The-Amazing-Examples-Of-Robotic-Humanoids-And-Digital-Humans%2F960x0.jpg%3Ffit%3Dscale" alt="Picture">
-      <figcaption id="img-caption">DeepMind Technologies is a British artificial intelligence company now owned by Google</figcaption>
-    </figure>
-    <article id="article">
-      <p id="tribute-info">
-        AlphaGo is a computer program that plays the board game Go. It was developed by DeepMind Technologies a subsidiary of Google.
-        <br><br>
-        Subsequent versions of AlphaGo became increasingly powerful, including a version that competed under the name Master. After retiring from competitive play, AlphaGo Master was succeeded by an even more powerful version known as AlphaGo Zero, which was completely self-taught without learning from human games. AlphaGo Zero was then generalized into a program known as AlphaZero, which played additional games, including chess and shogi. AlphaZero has in turn been succeeded by a program known as MuZero which learns without being taught the rules.
-        <br><br>
-        AlphaGo and its successors use a Monte Carlo tree search algorithm to find its moves based on knowledge previously acquired by machine learning, specifically by an artificial neural network (a deep learning method) by extensive training, both from human and computer play. A neural network is trained to identify the best moves and the winning percentages of these moves. This neural network improves the strength of the tree search, resulting in stronger move selection in the next iteration.
-        <br><br>
-        In 2017, the Master version of AlphaGo beat the number one ranked player in the world at the time, in a three-game match. After the match, DeepMind retired AlphaGo, while continuing AI research in other areas. The self-taught AlphaGo Zero achieved a 100–0 victory against the early competitive version of AlphaGo, and its successor AlphaZero is currently perceived as the world's top player in Go as well as possibly in chess.
-      </p>
-    </article>
-    <div id="summary">
-      <p>To summarise, Alpha Go was:</p>
-      <br>
-      <ul>
-        <li>Made in Cambridge, UK in the 2010's</li>
-        <li>Designed to play the complex Chinese game on Go as well as the professionals</li>
-        <li>Achieved this through machine learning</li>
-        <li>Took on and beat some of the world's best - doing to Go what DeepBlue had done to chess decades earlier</li>
-      </ul>
-    </div>
-  </div>
-  <footer id="footer">
-    <p>For additional information, check out <a id="tribute-link" target="_blank" href="https://deepmind.com/research/case-studies/alphago-the-story-so-far">Deep Mind</a>'s website</p>
-    <br>
-    <h3>By Lorcan</h3>
-  </footer>
 
+<body>
+  <div class="container">
+    <header>
+      <div class="header-name">
+        <div class="img-container">
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DeepMind_logo.png/220px-DeepMind_logo.png" />
+          </a>
+        </div>
+      </div>
+      <div class="nav" id="nav-top"><a href="#">Top</a></div>
+      <div class="nav" id="nav-article"><a href="#summary">Summary</a></div>
+      <div class="nav" id="nav-more-info"><a href="#footer">More Info</a></div>
+    </header>
+    <div id="content">
+      <div id="heading">
+        <h1 id="title">Alpha Go</h1>
+        <h2>The AI Go player developed by DeepMind Technologies</h2>
+      </div>
+      <figure id="img-div">
+        <img id="main-image"
+          src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5e4a3210a854780006b18efa%2FArtificial-Human-Beings--The-Amazing-Examples-Of-Robotic-Humanoids-And-Digital-Humans%2F960x0.jpg%3Ffit%3Dscale"
+          alt="Picture" />
+        <figcaption id="img-caption">
+          DeepMind Technologies is a British artificial intelligence company now
+          owned by Google
+        </figcaption>
+      </figure>
+      <div id="summary">
+        <p>To summarise, Alpha Go was:</p>
+        <br />
+        <ul>
+          <li>Made in Cambridge, UK in the 2010's</li>
+          <li>
+            Designed to play the complex Chinese game on Go to a high level
+          </li>
+          <li>Achieved this through machine learning</li>
+          <li>
+            Took on and beat some of the world's best - doing to Go what
+            DeepBlue had done to chess decades earlier
+          </li>
+        </ul>
+      </div>
+      <article id="article">
+        <p id="tribute-info">
+          AlphaGo is a computer program that plays the board game Go. It was
+          developed by DeepMind Technologies a subsidiary of Google.
+          <br /><br />
+          Subsequent versions of AlphaGo became increasingly powerful, including
+          a version that competed under the name Master. After retiring from
+          competitive play, AlphaGo Master was succeeded by an even more
+          powerful version known as AlphaGo Zero, which was completely
+          self-taught without learning from human games. AlphaGo Zero was then
+          generalized into a program known as AlphaZero, which played additional
+          games, including chess and shogi. AlphaZero has in turn been succeeded
+          by a program known as MuZero which learns without being taught the
+          rules.
+          <br /><br />
+          AlphaGo and its successors use a Monte Carlo tree search algorithm to
+          find its moves based on knowledge previously acquired by machine
+          learning, specifically by an artificial neural network (a deep
+          learning method) by extensive training, both from human and computer
+          play. A neural network is trained to identify the best moves and the
+          winning percentages of these moves. This neural network improves the
+          strength of the tree search, resulting in stronger move selection in
+          the next iteration.
+          <br /><br />
+          In 2017, the Master version of AlphaGo beat the number one ranked
+          player in the world at the time, in a three-game match. After the
+          match, DeepMind retired AlphaGo, while continuing AI research in other
+          areas. The self-taught AlphaGo Zero achieved a 100–0 victory against
+          the early competitive version of AlphaGo, and its successor AlphaZero
+          is currently perceived as the world's top player in Go as well as
+          possibly in chess.
+        </p>
+      </article>
+      <figure>
+        <div class="twoImageContainer">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/cgZf3vbVvt3XafDckITjal_N31B30W3B4n0eK69ij0vko-z2D9LC33BjkcsGObb6k-zp-IXS2e69O-p4wFLbnFltgOWmBRw9UhJCsTIhxXoX4AiKy8syDN20_4z-02rINbO1AGWfItG0djm9544d-vuPrn3KjQ"
+            alt="Picture" />
+          <img
+            src="https://i.guim.co.uk/img/media/6e698b71e16ecdeb5aca1d040b9c819a069f8065/469_955_2908_1744/master/2908.jpg?width=1200&quality=85&auto=format&fit=max&s=9ef1681be5b1a3bb0fd29f86fbf75c6a"
+            alt="Picture" />
+        </div>
+        <figcaption id="img-caption">
+          Pictures of AlphaGo in action
+        </figcaption>
+      </figure>
+    </div>
+    <footer id="footer">
+      <div class="footerText">
+      <p>
+        For additional information, check out
+        <a id="tribute-link" target="_blank"
+          href="https://deepmind.com/research/case-studies/alphago-the-story-so-far">Deep Mind</a>'s website
+      </p>
+      <h3>By Lorcan</h3>
+    </div>
+    </footer>
+  </div>
 </body>
